@@ -1,0 +1,14 @@
+{
+  "name": "prophecyforge-backend",
+  "version": "1.0.0",
+  "description": "Lambda backend for ProphecyForge AI",
+  "main": "index.js",
+  "scripts": {
+    "test:local": "node local-test.js"
+  },
+  "author": "AshNikov",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.934.0"
+  }
+}
