@@ -6,27 +6,20 @@ function App() {
   const API_URL = import.meta.env.VITE_API_URL;
 
   async function sendToBackend() {
-    setResponse("Loading...");
+  setResponse("Loading...");
 
-    try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          action: "test-upload",
-          source: "frontend-ui",
-          topic: topic || "no topic",
-        }),
-      });
+  try {
+    const res = await fetch(API_URL, {
+      method: "GET",
+    });
 
-      const data = await res.json();
-      setResponse(JSON.stringify(data, null, 2));
-    } catch (err) {
-      setResponse("Error: " + err.message);
-    }
+    const data = await res.json();
+    setResponse(JSON.stringify(data, null, 2));
+  } catch (err) {
+    setResponse("Error: " + err.message);
   }
+}
+
 
   return (
     <div style={{ padding: "40px", fontFamily: "Arial", maxWidth: "700px" }}>
