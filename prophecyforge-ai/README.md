@@ -45,6 +45,13 @@ Sample Healthy Response
   "service": "prophecyforge-backend",
   "message": "ProphecyForge AI backend is alive"
 }
+📸 Screenshots
+
+### 1. Live UI (CloudFront)
+![CloudFront UI](/mnt/data/CloudFront UI.png)
+
+### 2. Lambda JSON Response (API Gateway)
+![Lambda JSON Response](/mnt/data/API Gateway JSON response.png)
 
 🧩 Tech Stack
 Frontend
